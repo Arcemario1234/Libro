@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Para Mauren</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="libro.css"/>
+
+</head>
+<body>
+
+<div class="orb a"></div><div class="orb b"></div>
+<div id="pts"></div>
+<div id="spl"></div>
+
+<div class="scene">
+
+  <!-- ══ CLOSED BOOK ══ -->
+  <div id="closed-book" onclick="openBook()">
+    <div class="book-cover">
+      <div class="cover-noise"></div>
+      <div class="co tl"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M3 3Q3 18 18 18Q3 18 3 33" stroke="#C9A96E" stroke-width="1.1" fill="none"/><path d="M3 3Q18 3 18 18Q18 3 33 3" stroke="#C9A96E" stroke-width="1.1" fill="none"/><circle cx="3" cy="3" r="1.8" fill="#C9A96E"/></svg></div>
+      <div class="co tr"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M3 3Q3 18 18 18Q3 18 3 33" stroke="#C9A96E" stroke-width="1.1" fill="none"/><path d="M3 3Q18 3 18 18Q18 3 33 3" stroke="#C9A96E" stroke-width="1.1" fill="none"/><circle cx="3" cy="3" r="1.8" fill="#C9A96E"/></svg></div>
+      <div class="co bl"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M3 3Q3 18 18 18Q3 18 3 33" stroke="#C9A96E" stroke-width="1.1" fill="none"/><path d="M3 3Q18 3 18 18Q18 3 33 3" stroke="#C9A96E" stroke-width="1.1" fill="none"/><circle cx="3" cy="3" r="1.8" fill="#C9A96E"/></svg></div>
+      <div class="co br"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M3 3Q3 18 18 18Q3 18 3 33" stroke="#C9A96E" stroke-width="1.1" fill="none"/><path d="M3 3Q18 3 18 18Q18 3 33 3" stroke="#C9A96E" stroke-width="1.1" fill="none"/><circle cx="3" cy="3" r="1.8" fill="#C9A96E"/></svg></div>
+
+      <p class="cover-tag">Un libro para ti</p>
+      <h1 class="cover-name">Mauren Janis</h1>
+      <p class="cover-name2">Gamboa Berazain</p>
+      <div class="c-rule"><span class="l"></span><span class="d"></span><span class="r"></span></div>
+      <span class="cover-heart">♡</span>
+      <div class="c-rule"><span class="l"></span><span class="d"></span><span class="r"></span></div>
+      <p class="cover-hint">✦ toca para abrir ✦</p>
+    </div>
+  </div>
+
+  <!-- ══ OPEN BOOK ══ -->
+  <div id="open-book">
+
+    <!-- PAGE 1: PHOTOS -->
+    <div class="page dark active" id="pg0">
+      <button class="close-btn" onclick="closeBook()">✕ cerrar</button>
+
+      <div class="pg1-inner">
+        <p class="pg1-tag">Nuestros momentos</p>
+        <p class="pg1-title">Lo que vivimos juntos</p>
+        <div class="pg1-rule"><span class="l"></span><span class="d"></span><span class="r"></span></div>
+
+        <div class="car-outer">
+          <div class="car-track" id="ctrack">
+
+            <!-- ═══════════════════════════════════════════
+                 PON TUS FOTOS AQUÍ
+                 Cambia el src="foto1.jpg" por el nombre
+                 de tu archivo. Ponlos en la misma carpeta
+                 que este HTML.
+            ═══════════════════════════════════════════ -->
+
+            <div class="car-slide">
+              <img src="./img/imagen (1).jpeg" alt="Imagen 1">
+              <div class="car-caption">Un momento nuestro ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (2).jpeg" alt="Imagen 2">
+              <div class="car-caption">Contigo todo tiene sentido ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (3).jpeg" alt="Imagen 3">
+              <div class="car-caption">Lo que fuimos y lo que podemos ser ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (4).jpeg" alt="Imagen 4">
+              <div class="car-caption">Momentos que guardo en el alma ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (5).jpeg" alt="Imagen 5">
+              <div class="car-caption">Tú y yo — siempre ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (6).jpeg" alt="Imagen 6">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (7).jpeg" alt="Imagen 7">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (8).jpeg" alt="Imagen 8">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (9).jpeg" alt="Imagen 9">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (10).jpeg" alt="Imagen 10">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (11).jpeg" alt="Imagen 11">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (12).jpeg" alt="Imagen 12">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+            <div class="car-slide">
+              <img src="./img/imagen (13).jpeg" alt="Imagen 13">
+              <div class="car-caption">Todo lo que compartimos ✦</div>
+            </div>
+        
+            <!-- Para más fotos copia este bloque:
+            <div class="car-slide">
+              <img src="foto7.jpg" alt=""/>
+              <div class="car-caption">Tu texto ✦</div>
+            </div>
+            -->
+
+          </div>
+        </div>
+        <div class="car-dots" id="cdots"></div>
+      </div>
+
+      <div class="nav-bar">
+        <button class="nav-btn" disabled>‹</button>
+        <span class="nav-label">Página 1 de 4</span>
+        <button class="nav-btn" onclick="goPage(1)">›</button>
+      </div>
+      <span class="pg-num">— I —</span>
+    </div>
+
+    <!-- PAGE 2: CARTA 1 -->
+    <div class="page paper" id="pg1">
+      <button class="close-btn" onclick="closeBook()">✕ cerrar</button>
+
+      <div class="letter-inner">
+        <p class="letter-date" id="ld1"></p>
+        <p class="chapter-tag">Para ti</p>
+        <h2 class="letter-title">Mauren Janis,<br/><em>lo que siento…</em></h2>
+        <div class="l-rule"><span class="l"></span><span class="d"></span><span class="r"></span></div>
+
+        <p class="letter-body drop-cap">
+          Sé que las cosas entre nosotros no terminaron bien. Que hubo momentos en los que fallé, en los que el miedo o el orgullo pesaron más que el amor. Y eso lo cargo. No vengo a borrarlo ni a excusarlo.
+        </p>
+        <p class="letter-body indent">
+          Vengo a decirte que lo pienso, que lo entiendo, y que quisiera la oportunidad de hacer las cosas diferente. No porque no tenga nada más que hacer, sino porque cuando imagino todo lo bueno que puede venir, siempre apareces tú.
+        </p>
+
+        <div class="l-highlight">
+          "Pase lo que pase, siempre te voy a amar.<br/>Eso no cambia. Eso no lo rompe nada."
+        </div>
+
+        <p class="letter-body indent">
+          Quiero intentarlo de nuevo. Contigo. A tu ritmo.
+        </p>
+      </div>
+
+      <div class="nav-bar">
+        <button class="nav-btn" onclick="goPage(0)">‹</button>
+        <span class="nav-label">Página 2 de 4</span>
+        <button class="nav-btn" onclick="goPage(2)">›</button>
+      </div>
+      <span class="pg-num">— II —</span>
+    </div>
+
+    <!-- PAGE 3: CARTA 2 -->
+    <div class="page paper" id="pg2">
+      <button class="close-btn" onclick="closeBook()">✕ cerrar</button>
+
+      <div class="letter-inner">
+        <p class="letter-date" id="ld2"></p>
+        <p class="chapter-tag">Lo que prometo</p>
+        <h2 class="letter-title"><em>Esta vez será diferente</em></h2>
+        <div class="l-rule"><span class="l"></span><span class="d"></span><span class="r"></span></div>
+
+        <p class="letter-body drop-cap">
+          No te pido que olvides. Te pido que confíes, aunque sea un poco, aunque sea despacio. Que me dejes demostrarte que puedo ser lo que necesitas.
+        </p>
+        <p class="letter-body indent">
+          Quiero estar ahí cuando estés bien y cuando no lo estés. Quiero que pasemos todos los días juntos, tener las conversaciones sin sentido, los silencios que no incomodan.
+        </p>
+
+        <div class="l-highlight">
+          "Quiero lo tuyo, Mauren. Todo lo tuyo. Sin condiciones, sin medias tintas."
+        </div>
+
+        <p class="letter-body indent">
+          Y si en algún momento sientes que me equivoco,decimelo. Porque esta vez quiero hacerlo bien. Contigo.
+        </p>
+      </div>
+
+      <div class="nav-bar">
+        <button class="nav-btn" onclick="goPage(1)">‹</button>
+        <span class="nav-label">Página 3 de 4</span>
+        <button class="nav-btn" onclick="goPage(3)">›</button>
+      </div>
+      <span class="pg-num">— III —</span>
+    </div>
+
+    <!-- PAGE 4: PREGUNTA FINAL -->
+    <div class="page paper" id="pg3">
+      <button class="close-btn" onclick="closeBook()">✕ cerrar</button>
+
+      <div class="cta-inner">
+        <p class="chapter-tag">La pregunta más importante</p>
+
+        <p class="cta-q">
+          ¿Me das la oportunidad<br/>de volver a intentarlo,<br/><em>Mau?</em>
+        </p>
+
+        <div class="cta-rule">
+          <span class="l"></span><span class="d"></span><span class="r"></span>
+        </div>
+
+
+        <p style="font-family:'Playfair Display',serif;font-style:italic;margin-top:20px;font-size:1.1rem;color:rgba(60,30,10,.35);">
+          Te amooooo muuuucho❤️, Mauren. Gracias por ser como eres, por lo que compartimos, y por lo que podemos construir juntos.
+        </p>
+      </div>
+      <div class="cta-btns">
+          <button class="btn btn-yes" onclick="celebrate()">Sí, lo intentamos ♡</button>
+          <button class="btn btn-no" id="noBtn"
+            onmouseover="escBtn(this)" ontouchstart="escBtn(this)">
+            Necesito tiempo…
+          </button>
+        </div>
+
+      <div class="nav-bar">
+        <button class="nav-btn" onclick="goPage(2)">‹</button>
+        <span class="nav-label">Página 4 de 4</span>
+        <button class="nav-btn" disabled>›</button>
+      </div>
+      <span class="pg-num">— IV —</span>
+    </div>
+
+  </div><!-- /open-book -->
+</div><!-- /scene -->
+
+<!-- CELEBRATION -->
+<div id="cel">
+  <div class="cel-ico">♡</div>
+  <h2 class="cel-t">Gracias, Mauren.</h2>
+  <div class="cel-ln"></div>
+  <p class="cel-s">Te prometo que esta vez va a ser diferente. Contigo todo tiene sentido. Vamos a construir algo hermoso, juntos, paso a paso. Te amo con todo lo que soy. 🌹</p>
+</div>
+</body>
+<script src="libro.js" defer></script>
+</html>
