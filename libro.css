@@ -497,9 +497,13 @@ body {
     max-width: 100%;
     margin: 0 auto;
     max-height: 70vh;
+  }
+
+  #open-book.visible {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .page {
@@ -621,9 +625,13 @@ body {
     width: 95vw;
     margin: 0 auto;
     max-height: 70vh;
+  }
+
+  #open-book.visible {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .page {
