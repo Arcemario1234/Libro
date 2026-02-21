@@ -71,7 +71,7 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,15 +479,23 @@ body {
    RESPONSIVE MOBILE (máximo 768px)
 ══════════════════════════════════════════ */
 @media (max-width: 768px) {
+  .scene {
+    padding: 1.5vh 1.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+
   #closed-book {
     width: min(95vw, 100%);
     height: auto;
     min-height: 55vh;
+    margin: 0 auto;
   }
 
   #open-book {
     width: min(95vw, 100%);
     max-width: 100%;
+    margin: 0 auto;
   }
 
   .page {
@@ -593,13 +601,21 @@ body {
    RESPONSIVE EXTRA SMALL (máximo 480px)
 ══════════════════════════════════════════ */
 @media (max-width: 480px) {
+  .scene {
+    padding: 1vh 1vw;
+    align-items: center;
+    justify-content: center;
+  }
+
   #closed-book {
     width: 95vw;
     min-height: 50vh;
+    margin: 0 auto;
   }
 
   #open-book {
     width: 95vw;
+    margin: 0 auto;
   }
 
   .page {
