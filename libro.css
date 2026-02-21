@@ -474,3 +474,173 @@ body {
   12%  {                                            opacity: 1; }
   100% { transform: translateY(-92vh) rotate(720deg); opacity: 0; }
 }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE MOBILE (máximo 768px)
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  #closed-book {
+    width: min(95vw, 100%);
+    height: auto;
+    min-height: 55vh;
+  }
+
+  #open-book {
+    width: min(95vw, 100%);
+    max-width: 100%;
+  }
+
+  .page {
+    height: clamp(340px, 55vh, 500px);
+    border-radius: 8px 12px 12px 8px;
+  }
+
+  /* Página 1 - Carrusel */
+  .pg1-inner {
+    padding: clamp(12px, 2.5vh, 20px) clamp(14px, 3vw, 20px) 0;
+  }
+
+  .pg1-tag {
+    font-size: clamp(.48rem, 1vw, .62rem);
+    margin-bottom: 6px;
+  }
+
+  .pg1-title {
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+    margin-bottom: 8px;
+  }
+
+  .car-outer {
+    height: clamp(180px, 35vh, 300px);
+  }
+
+  .car-caption {
+    font-size: clamp(.78rem, 2vw, .9rem);
+    padding: clamp(12px, 2vh, 18px) 10px 8px;
+  }
+
+  /* Páginas de letras */
+  .letter-inner {
+    padding: clamp(14px, 2.5vh, 24px) clamp(16px, 4vw, 28px) 8px clamp(16px, 4vw, 28px);
+  }
+
+  .letter-date {
+    font-size: .52rem;
+    margin-bottom: 12px;
+  }
+
+  .chapter-tag {
+    font-size: .5rem;
+    margin-bottom: 6px;
+  }
+
+  .letter-title {
+    font-size: clamp(1.15rem, 3.5vw, 1.6rem);
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+
+  .letter-body {
+    font-size: clamp(.95rem, 2.2vw, 1.05rem);
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+
+  .l-highlight {
+    font-size: clamp(.88rem, 2vw, 1rem);
+    margin: 10px 0;
+    padding: 10px 12px;
+  }
+
+  /* Página CTA */
+  .cta-inner {
+    padding: clamp(12px, 2.5vh, 30px) clamp(12px, 3vw, 30px) 0;
+  }
+
+  .cta-q {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+    line-height: 1.4;
+  }
+
+  .btn {
+    padding: clamp(8px, 1.2vh, 11px) clamp(18px, 3vw, 28px);
+    font-size: clamp(.58rem, 1vw, .7rem);
+  }
+
+  /* Barra de navegación */
+  .nav-bar {
+    padding: clamp(8px, 1.5vh, 14px) clamp(10px, 2.5vw, 16px) clamp(8px, 1.5vh, 14px);
+  }
+
+  .nav-btn {
+    width: clamp(32px, 8vw, 36px);
+    height: clamp(32px, 8vw, 36px);
+    font-size: clamp(.95rem, 2.5vw, 1rem);
+  }
+
+  .nav-label {
+    font-size: clamp(.52rem, 1vw, .62rem);
+  }
+
+  .pg-num {
+    font-size: .65rem;
+    bottom: 10px;
+    right: 14px;
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE EXTRA SMALL (máximo 480px)
+══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  #closed-book {
+    width: 95vw;
+    min-height: 50vh;
+  }
+
+  #open-book {
+    width: 95vw;
+  }
+
+  .page {
+    height: clamp(300px, 50vh, 420px);
+  }
+
+  .cover-tag {
+    font-size: .5rem;
+    margin-bottom: 12px;
+  }
+
+  .cover-name {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+  }
+
+  .cover-name2 {
+    font-size: clamp(.85rem, 1.8vw, 1.1rem);
+  }
+
+  .pg1-inner {
+    padding: 10px 12px 0;
+  }
+
+  .pg1-title {
+    font-size: clamp(1rem, 3vw, 1.35rem);
+  }
+
+  .car-outer {
+    height: clamp(150px, 30vh, 250px);
+  }
+
+  .letter-title {
+    font-size: clamp(1.05rem, 3vw, 1.45rem);
+  }
+
+  .letter-body {
+    font-size: clamp(.92rem, 2vw, 1rem);
+    line-height: 1.7;
+  }
+
+  .cta-q {
+    font-size: clamp(.95rem, 2.8vw, 1.4rem);
+  }
+}
