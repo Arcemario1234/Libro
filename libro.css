@@ -496,6 +496,10 @@ body {
     width: min(95vw, 100%);
     max-width: 100%;
     margin: 0 auto;
+    max-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .page {
@@ -616,6 +620,10 @@ body {
   #open-book {
     width: 95vw;
     margin: 0 auto;
+    max-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .page {
